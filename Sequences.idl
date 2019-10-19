@@ -1,0 +1,8 @@
+#include "Primitives.idl"
+#include "Enum.idl"
+
+struct Sequences{
+	sequence<BasicEnum,10> basic;
+	PrimitiveStruct primitiveArray[20];
+};
+
