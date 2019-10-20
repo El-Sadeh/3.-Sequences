@@ -69,7 +69,7 @@ class SequencesReaderListener : public dds::sub::NoOpDataReaderListener<Sequence
 
             if (sample_it->info().valid()){
                 count_++;
-                std::cout << sample_it->data() << std::endl; 
+                std::cout << sample_it->data().basic() << std::endl; 
             }        
         }      
     }

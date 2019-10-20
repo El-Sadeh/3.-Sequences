@@ -260,6 +260,10 @@
     </BuildLog>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Enum.cxx" />
+    <ClCompile Include="EnumPlugin.cxx" />
+    <ClCompile Include="Primitives.cxx" />
+    <ClCompile Include="PrimitivesPlugin.cxx" />
     <ClCompile Include="Sequences_publisher.cxx">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

@@ -24,6 +24,18 @@
     <ClCompile Include="Sequences.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Enum.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitivesPlugin.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumPlugin.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SequencesPlugin.hpp">
