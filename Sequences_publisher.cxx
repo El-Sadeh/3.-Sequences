@@ -25,22 +25,28 @@ void publisher_main(int domain_id, int sample_count)
 	BasicEnum tempBasic;
 	for (int count = 0; count < sample_count || sample_count == 0; count++) {
 		// Modify the data to be written here
-		int countMod3 = count % 3;
+		int countMod3 = (count % 3);
 		switch (countMod3)
 		{
 		case 0:
 			tempBasic = BasicEnum::A;
+			break;
 		case 1:
 			tempBasic = BasicEnum::B;
+			break;
 		case 2:
 			tempBasic = BasicEnum::C;
+			break;
 		default:
 			break;
 		};
-		if ((count % 10) < 9)
+		if ((count % 11) < 10)
 			sample.basic().push_back(tempBasic);
 		else
+		{
 			sample.basic().clear();
+			sample.basic().push_back(tempBasic);
+		}
 		std::cout << "Writing Sequences, count " << count << std::endl;
 		writer.write(sample);
 
